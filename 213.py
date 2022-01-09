@@ -299,12 +299,11 @@ class EPD_2in13(framebuf.FrameBuffer):
         pass
 
     def set_bit(self, v, index, x):
-        """Set the index:th bit of v to 1 if x is truthy, else to 0, and return the new value."""
-        mask = 1 << index   # Compute mask, an integer with just bit 'index' set.
-        v &= ~mask          # Clear the bit indicated by the mask (if x is False)
+        mask = 1 << index 
+        v &= ~mask
         if x:
-            v |= mask         # If x was True, set the bit indicated by the mask.
-        return v            # Return the result, we're done.
+            v |= mask
+        return v
 
     def bufpixel(self, x, y, c = 0, wraparound = True):
         if wraparound:
