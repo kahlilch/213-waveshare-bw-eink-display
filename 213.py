@@ -1,4 +1,9 @@
-# Uses a modified version of the Waveshare team micropython drivers, notice below -
+# printchar, printstring and cmap derived from
+# https://github.com/leswright1977/picofont, and are originally licensed under
+# the Apache License 2.0. See repo for details.
+#
+# Uses a modified version of the Waveshare team micropython drivers, notice for
+# their code below -
 # *****************************************************************************
 # * | File        :	  Pico_ePaper-2.13.py
 # * | Author      :   Waveshare team
